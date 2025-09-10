@@ -1,5 +1,5 @@
 /*
-Second attempt builds on another dp approach, in which dp[i] represents the new people who have learned of the secret
+Second attempt builds on another dp approach, in which dp[i] represents the new people who have learned of the secret on day i
 Day 1, 1 person learns the secret, so dp[1] has to be 1
 We assign a counter c to keep track of how many people can spread the secret
 Starting from day 2, we add to the counter when we've gone beyond the delay time, and subtract from the counter when people start forgetting
@@ -8,6 +8,7 @@ We still need to apply mod 10^9 + 7 as needed, but we need to add 10^9 + 7 whene
 At some points, c might go beyond 10^9 + 7, which means c gets a lower value
 But c would get deducted by another value, which might make the original value go back to below 10^9 + 7
 If we don't add 10^9 + 7 in our operations, we might end up with negative values in our counter, so always add 10^9 + 7
+For the answer, we only count the last `forget` days where people still remember the secret
 */
 class Solution {
 public:
