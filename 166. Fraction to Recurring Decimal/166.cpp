@@ -3,7 +3,7 @@ For this problem, we mostly need to be careful of extremely large numbers and ex
 -2147483648 is extra tricky because you can't just use the abs function directly, you need to cast it as a long long first
 Then, when we get to the decimal values, we need to keep track of whether we've seen the remainder, and stop our operations once we see the same remainder appearing again
 We can use a hash map to do this, keep track of the remainder value we've seen as well as its position in the answer string
-So we start from the simpler cases:
+So we start from the basic conditions:
 - If numerator == 0, simply return 0
 - If either denominator or numerator is negative (but not both), our answer is negative, so we put '-' at the beginning of the answer string
 - Calculate the result of numerator / denominator and add to the answer string. If numerator % denominator == 0, return our answer string directly
