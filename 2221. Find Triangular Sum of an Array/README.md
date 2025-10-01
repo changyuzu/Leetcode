@@ -23,7 +23,7 @@ The above diagram depicts the process from which we obtain the triangular sum of
 
 **Example 2:**
 
-> **Input**:nums = [5]  
+> **Input**: nums = [5]  
 **Output**: 5  
 **Explanation**:  
 Since there is only one element in nums, the triangular sum is the value of that element itself.
