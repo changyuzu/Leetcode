@@ -3,7 +3,8 @@ This problem can be solved using binary search
 Basically, for each spell, we need to find how many potions will get it the target strength (product)
 If the potions vector is sorted, we can simply perform a binary search to find the point at which the potion became strong enough to get our target strength
 So we sort the potions, and in the beginning, find the minimum value (minVal) of potions in order to get the target strength
-We need ceiling division of success / s for this, so I used the ceiling division formula:
+Calculating minVal lets us directly compare the value of potions, instead of checking the product of the potion and the spell each time
+We need ceiling division of success / spell for this, so I used the ceiling division formula:
 	ceil(x,y) = x / y + (x % y != 0)	Basically, if x can't be completely divided by y, add 1
 Once we have our minVal, we start checking the potions
 If the strongest potion is less than the minVal for this spell, we push 0 to our answer and continue to the next spell
