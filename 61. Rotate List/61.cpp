@@ -5,7 +5,7 @@ This problem can be solved by keeping track of 3 pointers:
 - newHead: The pointer that goes 1 step in front of slow, which will become the new head
 First, start by defining the conditions where we simply return head: head == nullptr OR k == 0
 Because there's nothing to rotate if there are no nodes, and there is no rotation when k is 0
-Once we've checked those conditions, we define our head pointer and a counter for how many nodes are in the linked list
+Once we've checked those conditions, we define our fast pointer and a counter for how many nodes are in the linked list
 We need the counter because the problem statement doesn't specify that k must be within the range of the number of nodes
 Keeping count of the number of nodes allows us to avoid having to rerun the loop multiple times by simply counting k % count to get the actual rotation steps
 So, while fast != nullptr and k gets decremented, fast goes forward and count increments
