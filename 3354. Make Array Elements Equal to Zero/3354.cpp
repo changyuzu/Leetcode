@@ -9,6 +9,7 @@ I have 2 different solutions, the first one utilizing extra space with a vector 
 The second one doesn't utilize extra space, and simply keeps track of the sum on the left and right as we go
 */
 
+/*
 class Solution {
 public:
     int countValidSelections(vector<int>& nums) {
@@ -32,6 +33,7 @@ public:
         return ans;
     }
 };
+*/
 
 class Solution {
 public:
