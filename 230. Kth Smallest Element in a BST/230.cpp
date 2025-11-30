@@ -2,7 +2,7 @@
 For this problem, we can utilize the property of a Binary Search Tree:
 All nodes on the left side of a node are guaranteed to be strictly smaller, and all nodes on the right side of a node are guaranteed to be strictly larger
 In other words, the inorder traversal of a BST is always sorted
-So, we can simply to an inorder traversal of the BST, while keeping count of the number of nodes we've seen along the way
+So, we can simply do an inorder traversal of the BST, while keeping count of the number of nodes we've seen along the way
 Once we've reached k, set our answer to the current node's value and stop traversing, then return the answer
 */
 
