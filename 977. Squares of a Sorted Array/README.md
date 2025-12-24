@@ -19,8 +19,8 @@ After sorting, it becomes [0,1,9,16,100].
 
 **Constraints:**
 
-- `1 <= nums.length <= 10*4`
-- `-10*4 <= nums[i] <= 10*4`
+- `1 <= nums.length <= 10^4`
+- `-10^4 <= nums[i] <= 10^4`
 - `nums` is sorted in **non-decreasing** order.
 
 **Follow up:** Squaring each element and sorting the new array is very trivial, could you find an `O(n)` solution using a different approach?
