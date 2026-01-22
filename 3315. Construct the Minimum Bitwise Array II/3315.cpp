@@ -2,7 +2,7 @@
 This problem is the same as 3314. Construct the Minimum Bitwise Array I, but with stricter constraints, so brute force won't cut it
 So we'll need to look at the numbers in binary
 Notice that for target number ans[i], we want to OR it with ans[i] + 1
-With bitwise OR, only one number needs to have a set bit for it to be set in the resulting number
+With bitwise OR, only one number needs to have a set bit for that bit to be set in the resulting number
 So we can actually just look at the last 1's before a 0
 Since we want the result of (ans[i] OR ans[i] + 1) to be the number in nums, we can know that the last bit is guaranteed to be set
 In other words, the number we evaluate must not be divisible by 2
@@ -18,7 +18,7 @@ Simply check how many 1's are at the end of a number in binary, and turn the fir
 	Check that ans[i] + 1 = 4		-> 0100
 	3 OR 4	-> 0011 OR 0100 -> 0111
 	This still holds true even if there are other 1's further on the left, because we want to minimize the value of ans[i]
-I do this with a while loop
+I'm implementing my logic with a while loop
 Declare an integer variable to track the number of shifts, then while (n & 1) == 1:
 - Shift the bits 1 position to the right
 - Increment the position
