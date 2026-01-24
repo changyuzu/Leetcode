@@ -1,7 +1,7 @@
 # 9. Palindrome Number
 ###### **Easy**
 
-Given an integer `x`, return *`true` if `x` is a palindrome, and `false` otherwise*.
+Given an integer `x`, return *`true` if `x` is a* ***palindrome****, and `false` otherwise*.
  
 
 **Example 1:**
@@ -27,4 +27,4 @@ Given an integer `x`, return *`true` if `x` is a palindrome, and `false` otherwi
 
 - `-2^31 <= x <= 2^31 - 1`
 
-Follow up: Could you solve it without converting the integer to a string?
+**Follow up:** Could you solve it without converting the integer to a string?
